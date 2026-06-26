@@ -272,6 +272,7 @@ p {
   border-radius: 28px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   transition: 0.2s ease;
 }
 
@@ -280,19 +281,15 @@ p {
   box-shadow: 10px 10px 0 #12002f;
 }
 
-.category-card span {
-  display: block;
-  margin-bottom: auto;
-  font-size: 0.85rem;
-  font-weight: 900;
-}
-
 .category-card h3 {
-  margin-top: 36px;
+  margin: 0 0 18px;
+  font-size: 1.55rem;
+  line-height: 1.05;
+  letter-spacing: -0.035em;
 }
 
 .category-card p {
-  margin-bottom: 0;
+  margin: 0;
   font-size: 0.94rem;
   font-weight: 700;
   line-height: 1.45;
