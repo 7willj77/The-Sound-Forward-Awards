@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Enter The Sound Forward Awards 2026</title>
+
+  <title>Enter | The Sound Forward Awards 2026</title>
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -11,6 +13,7 @@
   <header class="site-header">
     <div class="container nav">
       <div class="logo">The Sound Forward Awards</div>
+
       <nav>
         <a href="index.html">Home</a>
         <a href="entry.html">Enter</a>
@@ -22,11 +25,19 @@
 
     <section class="form-intro">
       <p class="eyebrow">Entry Form</p>
+
       <h1>Submit Your Entry</h1>
+
       <p>
-        Entries are open to unsigned UK artists only. Each submission costs £10 and
-        covers one category. If you want to enter more than one category, please submit
-        a separate form and payment for each entry.
+        Entries are open to unsigned UK artists only. Each submission costs £9.99
+        and covers one category. If you want to enter more than one category,
+        please submit a separate form and payment for each entry.
+      </p>
+
+      <p>
+        Entries close on <strong>31 August 2026</strong>. Submissions will be reviewed
+        by the industry panel in September, with the official announcement taking
+        place on <strong>Friday 9 October 2026</strong>.
       </p>
     </section>
 
@@ -47,16 +58,27 @@
         </p>
 
         <label for="artist-name">Artist / Band Name</label>
-        <input type="text" id="artist-name" name="artist-name" required />
+        <input type="text"
+               id="artist-name"
+               name="artist-name"
+               required />
 
         <label for="contact-name">Contact Name</label>
-        <input type="text" id="contact-name" name="contact-name" required />
+        <input type="text"
+               id="contact-name"
+               name="contact-name"
+               required />
 
         <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" required />
+        <input type="email"
+               id="email"
+               name="email"
+               required />
 
         <label for="category">Category</label>
-        <select id="category" name="category" required>
+        <select id="category"
+                name="category"
+                required>
           <option value="">Select one category</option>
           <option value="Best Newcomer 2026">Best Newcomer 2026</option>
           <option value="Best Single">Best Single</option>
@@ -71,16 +93,28 @@
         </select>
 
         <label for="song-title">Song / Album Title</label>
-        <input type="text" id="song-title" name="song-title" required />
+        <input type="text"
+               id="song-title"
+               name="song-title"
+               required />
 
         <label for="song-link">Song / Album Link</label>
-        <input type="url" id="song-link" name="song-link" placeholder="Spotify, SoundCloud, YouTube, Bandcamp etc." required />
+        <input type="url"
+               id="song-link"
+               name="song-link"
+               placeholder="Spotify, SoundCloud, YouTube, Bandcamp etc."
+               required />
 
         <label for="release-date">Release Date</label>
-        <input type="date" id="release-date" name="release-date" required />
+        <input type="date"
+               id="release-date"
+               name="release-date"
+               required />
 
         <label for="ai-used">Was AI used in the creation of this entry?</label>
-        <select id="ai-used" name="ai-used" required>
+        <select id="ai-used"
+                name="ai-used"
+                required>
           <option value="">Select an option</option>
           <option value="No">No</option>
           <option value="Yes - AI assisted">Yes - AI assisted</option>
@@ -88,17 +122,31 @@
         </select>
 
         <label for="notes">Notes for the panel</label>
-        <textarea id="notes" name="notes" rows="5" placeholder="Optional: tell us anything useful about the track, album, artist or creation process."></textarea>
+        <textarea id="notes"
+                  name="notes"
+                  rows="5"
+                  placeholder="Optional: tell us anything useful about the track, album, artist or creation process."></textarea>
 
         <div class="terms-box">
           <label>
-            <input type="checkbox" name="confirm-uk-unsigned" required />
+            <input type="checkbox"
+                   name="confirm-uk-unsigned"
+                   required />
             I confirm this entry is for an unsigned UK artist.
           </label>
 
           <label>
-            <input type="checkbox" name="confirm-payment" required />
-            I understand that my entry is only valid once the £10 PayPal payment has been completed.
+            <input type="checkbox"
+                   name="confirm-one-category"
+                   required />
+            I understand this submission is for one category only.
+          </label>
+
+          <label>
+            <input type="checkbox"
+                   name="confirm-payment"
+                   required />
+            I understand that my entry is only valid once the £9.99 PayPal payment has been completed.
           </label>
         </div>
 
