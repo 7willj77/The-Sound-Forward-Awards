@@ -44,24 +44,24 @@ p {
 
 h1 {
   max-width: 920px;
-  font-size: clamp(3.4rem, 8vw, 7.4rem);
-  line-height: 0.92;
-  letter-spacing: -0.06em;
+  font-size: clamp(3.2rem, 7vw, 6.8rem);
+  line-height: 0.94;
+  letter-spacing: -0.055em;
   margin-bottom: 28px;
 }
 
 h2 {
   max-width: 760px;
-  font-size: clamp(2.1rem, 4vw, 4rem);
+  font-size: clamp(2.4rem, 4vw, 4rem);
   line-height: 1;
   letter-spacing: -0.045em;
   margin-bottom: 0;
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   line-height: 1.2;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 p {
@@ -75,7 +75,7 @@ p {
   margin-bottom: 18px;
   color: #d4af37;
   font-size: 0.76rem;
-  font-weight: 800;
+  font-weight: 900;
   line-height: 1;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -95,7 +95,7 @@ p {
 }
 
 .nav {
-  height: 82px;
+  height: 74px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -177,25 +177,25 @@ nav a:hover {
    ========================================================= */
 
 .home-hero {
-  min-height: calc(100vh - 82px);
+  min-height: auto;
   display: flex;
   align-items: center;
   background:
     linear-gradient(90deg, rgba(0, 0, 0, 0.96), rgba(0, 0, 0, 0.72)),
-    radial-gradient(circle at 75% 25%, rgba(212, 175, 55, 0.24), transparent 32%),
+    radial-gradient(circle at 78% 24%, rgba(212, 175, 55, 0.20), transparent 30%),
     linear-gradient(135deg, #070707, #171717);
 }
 
 .hero-inner {
-  padding: 90px 0;
+  padding: 78px 0 72px;
 }
 
 .hero-lead {
   max-width: 680px;
-  margin-bottom: 34px;
+  margin-bottom: 30px;
   color: #dedede;
-  font-size: clamp(1.12rem, 2vw, 1.45rem);
-  line-height: 1.45;
+  font-size: 1.25rem;
+  line-height: 1.5;
 }
 
 .hero-actions {
@@ -210,7 +210,7 @@ nav a:hover {
    ========================================================= */
 
 .section {
-  padding: 96px 0;
+  padding: 78px 0;
 }
 
 .section-light {
@@ -259,7 +259,7 @@ nav a:hover {
 }
 
 .section-title {
-  margin-bottom: 48px;
+  margin-bottom: 34px;
 }
 
 .section-title h2 {
@@ -272,87 +272,100 @@ nav a:hover {
 }
 
 /* =========================================================
-   Categories
+   Category Boxes
    ========================================================= */
 
-.category-list {
-  border-top: 1px solid rgba(255, 255, 255, 0.16);
-}
-
-.category-row {
+.category-box-grid {
   display: grid;
-  grid-template-columns: 80px 1fr;
-  gap: 32px;
-  padding: 32px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
 }
 
-.category-row span {
+.category-box {
+  display: block;
+  min-height: 190px;
+  padding: 22px;
+  background: #101010;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 18px;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.category-box:hover {
+  transform: translateY(-4px);
+  border-color: #d4af37;
+  background: #151515;
+}
+
+.category-box span {
+  display: block;
+  margin-bottom: 34px;
   color: #d4af37;
-  font-size: 0.9rem;
+  font-size: 0.78rem;
   font-weight: 900;
+  letter-spacing: 0.12em;
 }
 
-.category-row h3 {
+.category-box h3 {
   color: #ffffff;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  margin-bottom: 10px;
 }
 
-.category-row p {
-  max-width: 640px;
+.category-box p {
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 0.92rem;
+  line-height: 1.45;
   margin-bottom: 0;
-  color: rgba(255, 255, 255, 0.72);
 }
 
-.genre-block {
-  margin-top: 72px;
-}
-
-.genre-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.genre-list span {
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  border-radius: 999px;
-  padding: 12px 18px;
-  color: #ffffff;
-  font-weight: 800;
+.ai-policy-line {
+  margin: 28px 0 0;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 1rem;
 }
 
 /* =========================================================
-   Dates
+   Key Dates
    ========================================================= */
 
-.date-list {
+.date-card-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  border-top: 1px solid rgba(8, 8, 8, 0.22);
-  border-left: 1px solid rgba(8, 8, 8, 0.22);
+  gap: 0;
+  border-top: 1px solid rgba(8, 8, 8, 0.24);
+  border-left: 1px solid rgba(8, 8, 8, 0.24);
 }
 
-.date-list div {
-  min-height: 180px;
+.date-card {
+  min-height: 160px;
   padding: 28px;
-  border-right: 1px solid rgba(8, 8, 8, 0.22);
-  border-bottom: 1px solid rgba(8, 8, 8, 0.22);
+  border-right: 1px solid rgba(8, 8, 8, 0.24);
+  border-bottom: 1px solid rgba(8, 8, 8, 0.24);
 }
 
-.date-list span {
+.date-card span {
   display: block;
-  margin-bottom: 28px;
-  color: rgba(8, 8, 8, 0.68);
+  margin-bottom: 26px;
+  color: rgba(8, 8, 8, 0.66);
   font-size: 0.78rem;
   font-weight: 900;
   letter-spacing: 0.13em;
   text-transform: uppercase;
 }
 
-.date-list strong {
+.date-card strong {
   display: block;
-  font-size: 1.45rem;
+  color: #080808;
+  font-size: 1.65rem;
   line-height: 1.1;
+  letter-spacing: -0.03em;
 }
 
 /* =========================================================
@@ -360,7 +373,7 @@ nav a:hover {
    ========================================================= */
 
 .final-cta {
-  padding: 110px 0;
+  padding: 92px 0;
   background:
     linear-gradient(rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.92)),
     radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.28), transparent 36%),
@@ -554,6 +567,12 @@ footer .container:not(.footer-inner) p {
    Mobile
    ========================================================= */
 
+@media (max-width: 1100px) {
+  .category-box-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 900px) {
   .nav {
     height: auto;
@@ -568,12 +587,8 @@ footer .container:not(.footer-inner) p {
     flex-wrap: wrap;
   }
 
-  .home-hero {
-    min-height: auto;
-  }
-
   .hero-inner {
-    padding: 76px 0;
+    padding: 68px 0 64px;
   }
 
   .split {
@@ -582,11 +597,15 @@ footer .container:not(.footer-inner) p {
   }
 
   .section {
-    padding: 72px 0;
+    padding: 68px 0;
   }
 
-  .date-list {
-    grid-template-columns: 1fr 1fr;
+  .category-box-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .date-card-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .footer-inner {
@@ -597,7 +616,7 @@ footer .container:not(.footer-inner) p {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 560px) {
   h1 {
     font-size: clamp(3rem, 18vw, 4.4rem);
   }
@@ -611,16 +630,19 @@ footer .container:not(.footer-inner) p {
     flex-direction: column;
   }
 
-  .category-row {
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
-
-  .date-list {
+  .category-box-grid {
     grid-template-columns: 1fr;
   }
 
-  .date-list div {
+  .category-box {
+    min-height: auto;
+  }
+
+  .date-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .date-card {
     min-height: auto;
   }
 
