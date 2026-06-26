@@ -358,10 +358,10 @@ p {
 .date-card span {
   display: block;
   margin-bottom: 30px;
-  font-size: 0.8rem;
+  font-size: 1.05rem;
   font-weight: 900;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.08em;
 }
 
 .date-card strong {
